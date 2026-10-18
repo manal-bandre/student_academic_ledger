@@ -1,8 +1,0 @@
-.venv/
-__pycache__/
-*.py[cod]
-.env
-.streamlit/secrets.toml
-*service-account*.json
-student_ledger.db
-student_ledger_export.xlsx
