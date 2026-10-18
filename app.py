@@ -343,14 +343,3 @@ with tabs[5]:
     st.warning("Spreadsheet export is a one-time export. This version does not automatically synchronize changes both ways with Google Sheets.")
     st.code("streamlit run app.py", language="bash")
     st.caption("For a clean demo, use fictional data only. Do not upload real student records publicly without permission.")
-import streamlit as st
-from google_sheets_sync import connect_sheet
-
-if st.button("Test Google Sheets Connection"):
-    try:
-        sheet = connect_sheet()
-        st.success(
-            f"Connected to: {sheet.title}"
-        )
-    except Exception as e:
-        st.error(f"Connection failed: {e}")
